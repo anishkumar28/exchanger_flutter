@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:exchanger_flutter/screens/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,11 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Exchanger',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        primaryColor: Colors.pink,
       ),
+      debugShowCheckedModeBanner: false,
+      home: const Home(),
     );
   }
 }
